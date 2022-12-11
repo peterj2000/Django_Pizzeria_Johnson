@@ -1,0 +1,64 @@
+{% extends "pizzas/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example</title>
+    <link
+      rel="stylesheet"
+      href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    </script>
+    <style>
+      img {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1 style="color: rgb(5, 5, 5)">Peter's Pizzeria| Great Pizzas, Great Prices</h1>
+      </div>
+  
+      
+
+    <p>
+        <a href="{% url 'pizzas:index' %}">Pizzaria&nbsp|</a>
+        <a href="{% url 'pizzas:pizzas' %}">Pizzas</a>
+    </p>
+  
+      <img
+        src=
+"https://img.freepik.com/premium-vector/pizza-logo-design_9845-319.jpg"
+        alt="Flowers in Chania"
+        width="460"
+        height="345"/>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspClick Pizzas to views all our delicious choices</p>
+    </div>
+  </body>
+</html>
+ 
+{% block content %}
+
+
+ 
+   <body>
+      <style>
+          body {
+              background-image: url('https://pizzaschool.com/wp-content/uploads/2016/10/Pizza-Website-Background-3.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 100% 100%;
+          }
+      </style>
+  
+  
+  </body>
+
+
+{% endblock content %}

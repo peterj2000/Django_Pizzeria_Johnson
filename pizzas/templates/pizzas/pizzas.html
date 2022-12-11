@@ -1,0 +1,25 @@
+{% extends "pizzas/base.html" %}
+ 
+{% block content %}
+<p> Pizzas </p>
+ 
+<ul>
+   {% for pizza in all_pizzas %}
+ 
+   <li>
+       <a href="{% url 'pizzas:pizza' pizza.id %}">{{ pizza }}</a>
+   </li>
+ 
+   {% empty %}
+   <li> No pizzas have been added yet.</li>
+   {% endfor %}
+ 
+</ul>
+<style>
+    body {
+        background-image: url('https://pizzaschool.com/wp-content/uploads/2016/10/https://www.queensleeappetit.com/wp-content/uploads/2019/02/Meat-Lovers-Pizza-5-1-480x480.jpg-Website-Background-3.jpg');
+        background-repeat: no-repeat;
+       }
+ 
+ </style>
+{% endblock content %}
